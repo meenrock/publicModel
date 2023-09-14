@@ -18,14 +18,4 @@ def index():
 if __name__ == "__main__":
     app.run(ipaddress=ipconfig,port=5000, debug=True)
 
-def get_instagram_user_data_by_username(igUserName):
-    bot = igldr.Instaloader()
-
-    profile = igldr.Profile.from_username(bot.context, igUserName)
-
-
-def get_user_data_by_search_result(searchKey):
-    bot = igldr.Instaloader()
-
-    result = igldr.TopSearchResults(bot.context,searchKey)
 
