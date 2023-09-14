@@ -3,19 +3,16 @@ from dotenv import load_dotenv
 import os
 import re
 
-import instaloader as igldr
-import pandas as pd
-import numpy as np
-
 app = Flask(__name__)
 
-ipconfig = ""
+ipconfig = "127.0.0.1"
 
 @app.route('/flask', methods=['GET'])
 def index():
     return "Flask server"
 
 if __name__ == "__main__":
-    app.run(ipaddress=ipconfig,port=5000, debug=True)
+    app.run(host="127.0.0.1",port=5000, debug=True)
+
 
 
